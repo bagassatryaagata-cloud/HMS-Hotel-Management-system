@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://hmskubang.netlify.app/sitemap.xml

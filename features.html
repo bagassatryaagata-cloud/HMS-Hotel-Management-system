@@ -1,0 +1,699 @@
+<!doctype html>
+<html lang="en">
+	<head>
+	<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<!-- Primary SEO -->
+<title>HMS Features | Hotel Asset & Maintenance Management</title>
+<meta
+    name="description"
+    content="Explore HMS features for hotel asset management, maintenance requests, work orders, preventive maintenance, asset history, and maintenance tracking in one connected system."
+/>
+<meta name="robots" content="index, follow" />
+<meta name="author" content="HMS — Hotel Maintenance System" />
+<meta name="theme-color" content="#0c2340" />
+
+<!-- Canonical URL -->
+<link
+    rel="canonical"
+    href="https://hmskubang.netlify.app/features/features"
+/>
+
+<!-- Website favicon -->
+
+<link rel="icon" type="image/png" href="img/logo-tameng.png" />
+<link rel="apple-touch-icon" href="img/logo-tameng.png" />
+
+<!-- Logo untuk preview saat dibagikan -->
+
+<meta property="og:image" content="https://hmskubang.netlify.app/img/logo-tameng.png" />
+
+<!-- Open Graph: Social Media -->
+<meta property="og:type" content="website" />
+<meta
+    property="og:title"
+    content="HMS Features | Hotel Asset & Maintenance Management"
+/>
+<meta
+    property="og:description"
+    content="Discover how HMS helps hotel teams manage assets, organize work orders, track repairs, and plan preventive maintenance."
+/>
+<meta
+    property="og:url"
+    content="https://hmskubang.netlify.app/features/features"
+/>
+<meta property="og:site_name" content="HMS — Hotel Maintenance System" />
+<meta property="og:locale" content="en_US" />
+<!-- Add a real preview image if available -->
+<!-- <meta property="og:image" content="https://hmskubang.netlify.app/images/hms-features-preview.jpg" /> -->
+
+<!-- Twitter / X -->
+<meta name="twitter:card" content="summary_large_image" />
+<meta
+    name="twitter:title"
+    content="HMS Features | Hotel Maintenance System"
+/>
+<meta
+    name="twitter:description"
+    content="Explore hotel asset management, work orders, preventive maintenance, and maintenance tracking with HMS."
+/>
+<!-- <meta name="twitter:image" content="https://hmskubang.netlify.app/images/hms-features-preview.jpg" /> -->
+
+<!-- Performance: Google Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link
+    href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet"
+/>
+
+<!-- CSS -->
+<link rel="stylesheet" href="css/global.css" />
+<link rel="stylesheet" href="css/features.css" />
+
+<!-- Scroll reveal and reduced-motion support -->
+<script>
+    (() => {
+        const root = document.documentElement;
+
+        if (
+            !("IntersectionObserver" in window) ||
+            window.matchMedia("(prefers-reduced-motion: reduce)").matches
+        ) {
+            return;
+        }
+
+        root.classList.add("has-rise");
+
+        setTimeout(() => {
+            if (!root.hasAttribute("data-rise-ready")) {
+                root.classList.remove("has-rise");
+            }
+        }, 3000);
+    })();
+</script>
+	</head>
+
+	<body>
+		<nav class="navbar" aria-label="Main navigation">
+			<a class="logo-navbar" href="index.html" aria-label="HMS Asset System home">
+				<img src="img/logo.png" alt="" />
+			</a>
+
+			<div class="navbar-menu" id="primary-navigation">
+				<a href="index.html" class="link-navbar">Home</a>
+				<a href="features.html" class="link-navbar active" aria-current="page">Features</a>
+				<a href="aboutus.html" class="link-navbar">About Us</a>
+				<a href="contact.html" class="link-navbar">Contact Us</a>
+			</div>
+
+			<button
+				class="humberger-menu"
+				type="button"
+				aria-label="Open navigation"
+				aria-expanded="false"
+				aria-controls="primary-navigation"
+			>
+				<i data-lucide="menu" aria-hidden="true"></i>
+			</button>
+		</nav>
+
+		<!-- ===== ISI HALAMAN ===== -->
+		<main id="features">
+			<!-- 1) HERO -->
+			<section class="features-hero deco-host" aria-labelledby="features-hero-title">
+				<span class="deco deco-ring deco-lg deco-tr" aria-hidden="true"></span>
+				<span class="deco deco-dots deco-br" aria-hidden="true"></span>
+				<div class="features-hero-shell">
+					<div class="features-hero-copy" data-rise-group>
+						<p class="eyebrow">CONNECTED HOTEL OPERATIONS</p>
+						<h1 id="features-hero-title" class="features-hero-title">Every hotel asset.<br /><span class="title-accent">One clear system.</span></h1>
+						<p class="features-hero-description">
+							Bring asset records, work orders, and preventive maintenance into
+							one connected workspace, so your team knows what needs attention
+							and what comes next.
+						</p>
+					</div>
+				</div>
+			</section>
+
+			<!-- 2) FEATURE TOUR -->
+			<section class="feature-tour deco-host" aria-labelledby="feature-tour-title">
+				<span class="deco deco-plus deco-tr" aria-hidden="true"></span>
+				<span class="deco deco-dots deco-bl" aria-hidden="true"></span>
+				<div class="feature-tour-shell">
+					<header class="feature-tour-heading" data-rise-group>
+						<p class="eyebrow">A connected toolkit</p>
+						<h2 id="feature-tour-title" class="feature-tour-heading-title">Made for the work<br /><span class="title-muted">behind every stay.</span></h2>
+					</header>
+					<div class="feature-tour-layout" data-feature-tour>
+						<div class="feature-tour-list" role="tablist" aria-label="HMS features" aria-orientation="vertical">
+							<button class="feature-tour-item is-active" type="button" role="tab" id="feature-tab-work-orders" aria-selected="true" aria-controls="feature-visual" data-feature-select="0">
+								<span class="feature-tour-index">01</span><span class="feature-tour-item-copy"><span class="feature-tour-title">Work Orders</span><span class="feature-tour-description">From request to resolved, every step tracked.</span></span><span class="feature-tour-progress" aria-hidden="true"><i class="feature-tour-progress-bar"></i></span>
+							</button>
+							<button class="feature-tour-item" type="button" role="tab" id="feature-tab-preventive" aria-selected="false" aria-controls="feature-visual" data-feature-select="1" tabindex="-1">
+								<span class="feature-tour-index">02</span><span class="feature-tour-item-copy"><span class="feature-tour-title">Preventive Maintenance</span><span class="feature-tour-description">Plan upkeep with clear templates and schedules.</span></span><span class="feature-tour-progress" aria-hidden="true"><i class="feature-tour-progress-bar"></i></span>
+							</button>
+							<button class="feature-tour-item" type="button" role="tab" id="feature-tab-assets" aria-selected="false" aria-controls="feature-visual" data-feature-select="2" tabindex="-1">
+								<span class="feature-tour-index">03</span><span class="feature-tour-item-copy"><span class="feature-tour-title">Asset Management</span><span class="feature-tour-description">Follow every asset from registration to disposal, archive included.</span></span><span class="feature-tour-progress" aria-hidden="true"><i class="feature-tour-progress-bar"></i></span>
+							</button>
+							<button class="feature-tour-item" type="button" role="tab" id="feature-tab-dashboard" aria-selected="false" aria-controls="feature-visual" data-feature-select="3" tabindex="-1">
+								<span class="feature-tour-index">04</span><span class="feature-tour-item-copy"><span class="feature-tour-title">Operations Dashboard</span><span class="feature-tour-description">See priorities, open work, and upcoming checks.</span></span><span class="feature-tour-progress" aria-hidden="true"><i class="feature-tour-progress-bar"></i></span>
+							</button>
+							<button class="feature-tour-item" type="button" role="tab" id="feature-tab-master-data" aria-selected="false" aria-controls="feature-visual" data-feature-select="4" tabindex="-1">
+								<span class="feature-tour-index">05</span><span class="feature-tour-item-copy"><span class="feature-tour-title">Master Data</span><span class="feature-tour-description">Keep properties, departments, and categories aligned.</span></span><span class="feature-tour-progress" aria-hidden="true"><i class="feature-tour-progress-bar"></i></span>
+							</button>
+						</div>
+						<div class="feature-tour-visual" id="feature-visual" role="tabpanel" aria-labelledby="feature-tab-work-orders"></div>
+					</div>
+				</div>
+			</section>
+
+					<!-- 3) KEY FEATURES -->
+<section class="fr-section kf-section deco-host" aria-labelledby="kf-title">
+	<span class="deco deco-gear deco-tr" aria-hidden="true"></span>
+	<span class="deco deco-dots deco-bl" aria-hidden="true"></span>
+	<div class="fr-shell">
+		<header class="fr-heading" data-rise-group>
+			<p class="eyebrow">Key features</p>
+			<h2 id="kf-title" class="fr-heading-title">What each feature <span class="title-muted">gives your team.</span></h2>
+		</header>
+
+		<div class="kf-carousel" data-rise>
+			<div class="kf-track" data-kf-track tabindex="0" aria-label="Daftar key features">
+
+				<!-- HALAMAN 1: card 01-04 (2 atas, 2 bawah) -->
+				<div class="kf-page" data-kf-page>
+
+					<article class="kf-card" data-kf-card>
+						<div class="kf-top">
+							<span class="kf-icon" aria-hidden="true"><i data-lucide="package"></i></span>
+							<div class="kf-meta"><span class="kf-index">01</span><span class="kf-key">Key feature</span></div>
+						</div>
+						<h3 class="kf-title">Asset Management</h3>
+						<p class="kf-text">Register assets, track where they are, and follow their movement, repair, and disposal.</p>
+						<button class="kf-btn" type="button" data-kf-toggle aria-expanded="false" aria-controls="kf-panel-asset"><span data-kf-label>Learn more</span><i data-lucide="plus" aria-hidden="true"></i></button>
+						<div class="kf-panel" id="kf-panel-asset"><div class="kf-panel-in">
+							<ul class="kf-benefits">
+								<li class="kf-benefit"><span class="kf-benefit-icon" aria-hidden="true"><i data-lucide="map-pin"></i></span><span><strong class="kf-benefit-title">Know where every asset is</strong><span class="kf-benefit-desc">Each asset has a registered location and department.</span></span></li>
+								<li class="kf-benefit"><span class="kf-benefit-icon" aria-hidden="true"><i data-lucide="arrow-left-right"></i></span><span><strong class="kf-benefit-title">Traceable movement</strong><span class="kf-benefit-desc">Transfers between departments and properties are logged and approved.</span></span></li>
+								<li class="kf-benefit"><span class="kf-benefit-icon" aria-hidden="true"><i data-lucide="hammer"></i></span><span><strong class="kf-benefit-title">Repairs stay with the asset</strong><span class="kf-benefit-desc">Each repair is kept on the asset it belongs to.</span></span></li>
+								<li class="kf-benefit"><span class="kf-benefit-icon" aria-hidden="true"><i data-lucide="shield-check"></i></span><span><strong class="kf-benefit-title">Controlled disposal</strong><span class="kf-benefit-desc">Scrap, sale, or destruction goes through approval before the asset leaves the register.</span></span></li>
+							</ul>
+						</div></div>
+					</article>
+
+					<article class="kf-card" data-kf-card>
+						<div class="kf-top">
+							<span class="kf-icon" aria-hidden="true"><i data-lucide="wrench"></i></span>
+							<div class="kf-meta"><span class="kf-index">02</span><span class="kf-key">Key feature</span></div>
+						</div>
+						<h3 class="kf-title">Maintenance &amp; Work Orders</h3>
+						<p class="kf-text">From a staff report to a confirmed fix, each step of a maintenance request stays on record.</p>
+						<button class="kf-btn" type="button" data-kf-toggle aria-expanded="false" aria-controls="kf-panel-wo"><span data-kf-label>Learn more</span><i data-lucide="plus" aria-hidden="true"></i></button>
+						<div class="kf-panel" id="kf-panel-wo"><div class="kf-panel-in">
+							<ul class="kf-benefits">
+								<li class="kf-benefit"><span class="kf-benefit-icon" aria-hidden="true"><i data-lucide="send"></i></span><span><strong class="kf-benefit-title">Report in seconds</strong><span class="kf-benefit-desc">Staff submit a request with room, category, and priority.</span></span></li>
+								<li class="kf-benefit"><span class="kf-benefit-icon" aria-hidden="true"><i data-lucide="user-check"></i></span><span><strong class="kf-benefit-title">Supervisors review first</strong><span class="kf-benefit-desc">Requests are approved before engineering picks them up.</span></span></li>
+								<li class="kf-benefit"><span class="kf-benefit-icon" aria-hidden="true"><i data-lucide="users"></i></span><span><strong class="kf-benefit-title">One queue for engineering</strong><span class="kf-benefit-desc">Technicians see assigned orders and update status as they work.</span></span></li>
+								<li class="kf-benefit"><span class="kf-benefit-icon" aria-hidden="true"><i data-lucide="badge-check"></i></span><span><strong class="kf-benefit-title">Closed only when confirmed</strong><span class="kf-benefit-desc">Engineering confirms the Resolved status after the job is done.</span></span></li>
+							</ul>
+						</div></div>
+					</article>
+
+					<article class="kf-card" data-kf-card>
+						<div class="kf-top">
+							<span class="kf-icon" aria-hidden="true"><i data-lucide="clipboard-check"></i></span>
+							<div class="kf-meta"><span class="kf-index">03</span><span class="kf-key">Key feature</span></div>
+						</div>
+						<h3 class="kf-title">Preventive Maintenance</h3>
+						<p class="kf-text">Plan routine upkeep with templates and schedules, and keep every inspection on record.</p>
+						<button class="kf-btn" type="button" data-kf-toggle aria-expanded="false" aria-controls="kf-panel-pm"><span data-kf-label>Learn more</span><i data-lucide="plus" aria-hidden="true"></i></button>
+						<div class="kf-panel" id="kf-panel-pm"><div class="kf-panel-in">
+							<ul class="kf-benefits">
+								<li class="kf-benefit"><span class="kf-benefit-icon" aria-hidden="true"><i data-lucide="copy"></i></span><span><strong class="kf-benefit-title">Reusable templates</strong><span class="kf-benefit-desc">Build a PM template once and use it for schedules.</span></span></li>
+								<li class="kf-benefit"><span class="kf-benefit-icon" aria-hidden="true"><i data-lucide="calendar-clock"></i></span><span><strong class="kf-benefit-title">Planned, not guessed</strong><span class="kf-benefit-desc">PM schedules set when each routine check is due.</span></span></li>
+								<li class="kf-benefit"><span class="kf-benefit-icon" aria-hidden="true"><i data-lucide="list-checks"></i></span><span><strong class="kf-benefit-title">Tasks you can follow</strong><span class="kf-benefit-desc">PM tasks show what is assigned, in progress, or done.</span></span></li>
+								<li class="kf-benefit"><span class="kf-benefit-icon" aria-hidden="true"><i data-lucide="history"></i></span><span><strong class="kf-benefit-title">Inspection history</strong><span class="kf-benefit-desc">Completed tasks are kept in PM history for later review.</span></span></li>
+							</ul>
+						</div></div>
+					</article>
+
+					<article class="kf-card" data-kf-card>
+						<div class="kf-top">
+							<span class="kf-icon" aria-hidden="true"><i data-lucide="layout-dashboard"></i></span>
+							<div class="kf-meta"><span class="kf-index">04</span></div>
+						</div>
+						<h3 class="kf-title">Operations Dashboard</h3>
+						<p class="kf-text">A summary of asset inventory, open work, repairs, and pending PM, in one view.</p>
+						<button class="kf-btn" type="button" data-kf-toggle aria-expanded="false" aria-controls="kf-panel-dash"><span data-kf-label>Learn more</span><i data-lucide="plus" aria-hidden="true"></i></button>
+						<div class="kf-panel" id="kf-panel-dash"><div class="kf-panel-in">
+							<ul class="kf-benefits">
+								<li class="kf-benefit"><span class="kf-benefit-icon" aria-hidden="true"><i data-lucide="boxes"></i></span><span><strong class="kf-benefit-title">Inventory at a glance</strong><span class="kf-benefit-desc">See how many registered units are operational or need attention.</span></span></li>
+								<li class="kf-benefit"><span class="kf-benefit-icon" aria-hidden="true"><i data-lucide="clipboard-list"></i></span><span><strong class="kf-benefit-title">Open work in view</strong><span class="kf-benefit-desc">Active work orders and repairs show up without opening each module.</span></span></li>
+								<li class="kf-benefit"><span class="kf-benefit-icon" aria-hidden="true"><i data-lucide="calendar-check"></i></span><span><strong class="kf-benefit-title">Upcoming PM</strong><span class="kf-benefit-desc">Pending inspections appear on the same screen.</span></span></li>
+								<li class="kf-benefit"><span class="kf-benefit-icon" aria-hidden="true"><i data-lucide="activity"></i></span><span><strong class="kf-benefit-title">Recent activity</strong><span class="kf-benefit-desc">The latest work orders, PM tasks, and movements in one log.</span></span></li>
+							</ul>
+						</div></div>
+					</article>
+
+				</div>
+
+				<!-- HALAMAN 2: card 05-08 (2 atas, 2 bawah) -->
+				<div class="kf-page" data-kf-page>
+
+					<article class="kf-card" data-kf-card>
+						<div class="kf-top">
+							<span class="kf-icon" aria-hidden="true"><i data-lucide="warehouse"></i></span>
+							<div class="kf-meta"><span class="kf-index">05</span><span class="kf-key">Key feature</span></div>
+						</div>
+						<h3 class="kf-title">Asset Registration</h3>
+						<p class="kf-text">Record asset details, categories, and locations in one place.</p>
+						<button class="kf-btn" type="button" data-kf-toggle aria-expanded="false" aria-controls="kf-panel-parts"><span data-kf-label>Learn more</span><i data-lucide="plus" aria-hidden="true"></i></button>
+						<div class="kf-panel" id="kf-panel-parts"><div class="kf-panel-in">
+							<ul class="kf-benefits">
+								<li class="kf-benefit"><span class="kf-benefit-icon" aria-hidden="true"><i data-lucide="folder-check"></i></span><span><strong class="kf-benefit-title">Organized Asset Information</strong><span class="kf-benefit-desc">Keep asset details organized in one place.</span></span></li>
+								<li class="kf-benefit"><span class="kf-benefit-icon" aria-hidden="true"><i data-lucide="search"></i></span><span><strong class="kf-benefit-title">Easy Asset Reference</strong><span class="kf-benefit-desc">Find recorded asset information when needed.</span></span></li>
+								
+							</ul>
+						</div></div>
+					</article>
+
+					<article class="kf-card" data-kf-card>
+						<div class="kf-top">
+							<span class="kf-icon" aria-hidden="true"><i data-lucide="handshake"></i></span>
+							<div class="kf-meta"><span class="kf-index">06</span><span class="kf-key">Key feature</span></div>
+						</div>
+						<h3 class="kf-title">Archive Center</h3>
+						<p class="kf-text">Keep archived records organized and accessible when needed.</p>
+						<button class="kf-btn" type="button" data-kf-toggle aria-expanded="false" aria-controls="kf-panel-vendor"><span data-kf-label>Learn more</span><i data-lucide="plus" aria-hidden="true"></i></button>
+						<div class="kf-panel" id="kf-panel-vendor"><div class="kf-panel-in">
+							<ul class="kf-benefits">
+								<li class="kf-benefit"><span class="kf-benefit-icon" aria-hidden="true"><i data-lucide="folders"></i></span><span><strong class="kf-benefit-title">Organized Records</strong><span class="kf-benefit-desc">Keep archived information organized for reference.</span></span></li>
+								<li class="kf-benefit"><span class="kf-benefit-icon" aria-hidden="true"><i data-lucide="history"></i></span><span><strong class="kf-benefit-title">Historical Reference</strong><span class="kf-benefit-desc">Review archived records when needed.</span></span></li>
+								
+							</ul>
+						</div></div>
+					</article>
+
+					<article class="kf-card" data-kf-card>
+						<div class="kf-top">
+							<span class="kf-icon" aria-hidden="true"><i data-lucide="calendar-days"></i></span>
+							<div class="kf-meta"><span class="kf-index">07</span><span class="kf-key">Key feature</span></div>
+						</div>
+						<h3 class="kf-title">Master Data Management</h3>
+						<p class="kf-text">Manage the reference data used across asset and maintenance records.</p>
+						<button class="kf-btn" type="button" data-kf-toggle aria-expanded="false" aria-controls="kf-panel-tech"><span data-kf-label>Learn more</span><i data-lucide="plus" aria-hidden="true"></i></button>
+						<div class="kf-panel" id="kf-panel-tech"><div class="kf-panel-in">
+							<ul class="kf-benefits">
+								<li class="kf-benefit"><span class="kf-benefit-icon" aria-hidden="true"><i data-lucide="check-check"></i></span><span><strong class="kf-benefit-title">Consistent Information</strong><span class="kf-benefit-desc">Maintain consistent reference data across records.</span></span></li>
+								<li class="kf-benefit"><span class="kf-benefit-icon" aria-hidden="true"><i data-lucide="database"></i></span><span><strong class="kf-benefit-title">Centralized Data</strong><span class="kf-benefit-desc">Manage reference data in one place.</span></span></li>
+								
+						</div></div>
+					</article>
+
+					<article class="kf-card" data-kf-card>
+						<div class="kf-top">
+							<span class="kf-icon" aria-hidden="true"><i data-lucide="file-spreadsheet"></i></span>
+							<div class="kf-meta"><span class="kf-index">08</span><span class="kf-key">Key feature</span></div>
+						</div>
+						<h3 class="kf-title">Asset Repair</h3>
+						<p class="kf-text">Record asset repairs and keep track of their maintenance status.</p>
+						<button class="kf-btn" type="button" data-kf-toggle aria-expanded="false" aria-controls="kf-panel-report"><span data-kf-label>Learn more</span><i data-lucide="plus" aria-hidden="true"></i></button>
+						<div class="kf-panel" id="kf-panel-report"><div class="kf-panel-in">
+							<ul class="kf-benefits">
+								<li class="kf-benefit"><span class="kf-benefit-icon" aria-hidden="true"><i data-lucide="clipboard-check"></i></span><span><strong class="kf-benefit-title">Repair Status Overview</strong><span class="kf-benefit-desc">Review the current status of asset repairs.</span></span></li>
+								<li class="kf-benefit"><span class="kf-benefit-icon" aria-hidden="true"><i data-lucide="file-text"></i></span><span><strong class="kf-benefit-title">Repair Information</strong><span class="kf-benefit-desc">Access recorded details about asset repairs.</span></span></li>
+								
+							</ul>
+						</div></div>
+					</article>
+
+				</div>
+			</div>
+
+			<div class="kf-controls">
+				<div class="kf-dots" role="group" aria-label="Pilih halaman">
+					<button class="kf-dot is-active" type="button" data-kf-dot aria-label="Halaman 1" aria-current="true"></button>
+					<button class="kf-dot" type="button" data-kf-dot aria-label="Halaman 2" aria-current="false"></button>
+				</div>
+				<div class="kf-nav">
+					<button type="button" data-kf-prev aria-label="Sebelumnya" disabled><i data-lucide="chevron-left"></i></button>
+					<button type="button" data-kf-next aria-label="Berikutnya"><i data-lucide="chevron-right"></i></button>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+				<!-- 4) KARTU ROLE -->
+				<section class="fr-section deco-host" id="roles" aria-labelledby="roles-title">
+					<span class="deco deco-ring deco-lg deco-tr" aria-hidden="true"></span>
+					<span class="deco deco-plus deco-br" aria-hidden="true"></span>
+					<div class="fr-shell">
+						<header class="fr-heading" data-rise-group>
+							<p class="eyebrow">Built for every role</p>
+							<h2 id="roles-title" class="fr-heading-title">A clear place for <span class="title-muted">every role.</span></h2>
+						</header>
+						<div class="fr-cards" data-fr-cards data-rise>
+							<article class="fr-card" data-fr-card style="--fr-bg: #e7f1ff; --fr-ac: #1677ff;">
+								<div class="fr-layer fr-default">
+									<h3 class="fr-card-title">Requester</h3>
+									<p class="fr-card-text">Report an issue in seconds.</p>
+									<button class="fr-btn" type="button" data-fr-open aria-expanded="false" aria-controls="fr-detail-requester">Learn more <i data-lucide="arrow-right" aria-hidden="true"></i></button>
+									<span class="fr-dots" aria-hidden="true"></span>
+									<span class="fr-art" aria-hidden="true"><i data-lucide="mouse-pointer-click"></i></span>
+								</div>
+								<button class="fr-layer fr-strip" type="button" data-fr-open aria-label="Open Requester"><i data-lucide="mouse-pointer-click" aria-hidden="true"></i><span class="fr-strip-label">Requester</span></button>
+								<div class="fr-layer fr-detail" id="fr-detail-requester" role="region" aria-label="Requester details">
+									<div class="fr-detail-in">
+										<div class="fr-detail-copy">
+											<h3 class="fr-detail-title">Requester</h3>
+											<p class="fr-who">Any department</p>
+											<p class="fr-detail-text">Report an issue in seconds.</p>
+										</div>
+										<ul class="fr-feature-list">
+												<li class="fr-feature"><i data-lucide="file-plus" aria-hidden="true"></i><span><strong class="fr-feature-title">Maintenance request</strong><small class="fr-feature-desc">Room, category, priority</small></span></li>
+												<li class="fr-feature"><i data-lucide="eye" aria-hidden="true"></i><span><strong class="fr-feature-title">Live status</strong><small class="fr-feature-desc">Follow every update</small></span></li>
+												<li class="fr-feature"><i data-lucide="history" aria-hidden="true"></i><span><strong class="fr-feature-title">Request history</strong><small class="fr-feature-desc">Everything you reported</small></span></li>
+										</ul>
+									</div>
+									<button class="fr-x" type="button" data-fr-close aria-label="Close Requester details"><i data-lucide="x" aria-hidden="true"></i></button>
+								</div>
+							</article>
+							<article class="fr-card" data-fr-card style="--fr-bg: #e9ecff; --fr-ac: #4057e6;">
+								<div class="fr-layer fr-default">
+									<h3 class="fr-card-title">Approver</h3>
+									<p class="fr-card-text">Review, approve, and assign.</p>
+									<button class="fr-btn" type="button" data-fr-open aria-expanded="false" aria-controls="fr-detail-approver">Learn more <i data-lucide="arrow-right" aria-hidden="true"></i></button>
+									<span class="fr-dots" aria-hidden="true"></span>
+									<span class="fr-art" aria-hidden="true"><i data-lucide="user-check"></i></span>
+								</div>
+								<button class="fr-layer fr-strip" type="button" data-fr-open aria-label="Open Approver"><i data-lucide="user-check" aria-hidden="true"></i><span class="fr-strip-label">Approver</span></button>
+								<div class="fr-layer fr-detail" id="fr-detail-approver" role="region" aria-label="Approver details">
+									<div class="fr-detail-in">
+										<div class="fr-detail-copy">
+											<h3 class="fr-detail-title">Approver</h3>
+											<p class="fr-who">Supervisors and department heads</p>
+											<p class="fr-detail-text">Review, approve, and assign.</p>
+										</div>
+										<ul class="fr-feature-list">
+												<li class="fr-feature"><i data-lucide="check-check" aria-hidden="true"></i><span><strong class="fr-feature-title">Approve requests</strong><small class="fr-feature-desc">Keep work moving</small></span></li>
+												<li class="fr-feature"><i data-lucide="users" aria-hidden="true"></i><span><strong class="fr-feature-title">Assign work</strong><small class="fr-feature-desc">Right person, right job</small></span></li>
+												<li class="fr-feature"><i data-lucide="arrow-left-right" aria-hidden="true"></i><span><strong class="fr-feature-title">Movement and disposal</strong><small class="fr-feature-desc">Approval in one place</small></span></li>
+										</ul>
+									</div>
+									<button class="fr-x" type="button" data-fr-close aria-label="Close Approver details"><i data-lucide="x" aria-hidden="true"></i></button>
+								</div>
+							</article>
+							<article class="fr-card" data-fr-card style="--fr-bg: #e0f3fb; --fr-ac: #0b7fb5;">
+								<div class="fr-layer fr-default">
+									<h3 class="fr-card-title">Engineering</h3>
+									<p class="fr-card-text">Fix it. Close it.</p>
+									<button class="fr-btn" type="button" data-fr-open aria-expanded="false" aria-controls="fr-detail-engineering">Learn more <i data-lucide="arrow-right" aria-hidden="true"></i></button>
+									<span class="fr-dots" aria-hidden="true"></span>
+									<span class="fr-art" aria-hidden="true"><i data-lucide="wrench"></i></span>
+								</div>
+								<button class="fr-layer fr-strip" type="button" data-fr-open aria-label="Open Engineering"><i data-lucide="wrench" aria-hidden="true"></i><span class="fr-strip-label">Engineering</span></button>
+								<div class="fr-layer fr-detail" id="fr-detail-engineering" role="region" aria-label="Engineering details">
+									<div class="fr-detail-in">
+										<div class="fr-detail-copy">
+											<h3 class="fr-detail-title">Engineering</h3>
+											<p class="fr-who">Engineers and technicians</p>
+											<p class="fr-detail-text">Fix it. Close it.</p>
+										</div>
+										<ul class="fr-feature-list">
+												<li class="fr-feature"><i data-lucide="clipboard-list" aria-hidden="true"></i><span><strong class="fr-feature-title">Work orders</strong><small class="fr-feature-desc">Request to resolved</small></span></li>
+												<li class="fr-feature"><i data-lucide="calendar-check" aria-hidden="true"></i><span><strong class="fr-feature-title">PM tasks</strong><small class="fr-feature-desc">Scheduled upkeep</small></span></li>
+												<li class="fr-feature"><i data-lucide="hammer" aria-hidden="true"></i><span><strong class="fr-feature-title">Repair</strong><small class="fr-feature-desc">Track every repair</small></span></li>
+										</ul>
+									</div>
+									<button class="fr-x" type="button" data-fr-close aria-label="Close Engineering details"><i data-lucide="x" aria-hidden="true"></i></button>
+								</div>
+							</article>
+							<article class="fr-card" data-fr-card style="--fr-bg: #dff4ec; --fr-ac: #0f8a6a;">
+								<div class="fr-layer fr-default">
+									<h3 class="fr-card-title">Admin</h3>
+									<p class="fr-card-text">Set the rules once.</p>
+									<button class="fr-btn" type="button" data-fr-open aria-expanded="false" aria-controls="fr-detail-admin">Learn more <i data-lucide="arrow-right" aria-hidden="true"></i></button>
+									<span class="fr-dots" aria-hidden="true"></span>
+									<span class="fr-art" aria-hidden="true"><i data-lucide="sliders-horizontal"></i></span>
+								</div>
+								<button class="fr-layer fr-strip" type="button" data-fr-open aria-label="Open Admin"><i data-lucide="sliders-horizontal" aria-hidden="true"></i><span class="fr-strip-label">Admin</span></button>
+								<div class="fr-layer fr-detail" id="fr-detail-admin" role="region" aria-label="Admin details">
+									<div class="fr-detail-in">
+										<div class="fr-detail-copy">
+											<h3 class="fr-detail-title">Admin</h3>
+											<p class="fr-who">System owners</p>
+											<p class="fr-detail-text">Set the rules once.</p>
+										</div>
+										<ul class="fr-feature-list">
+												<li class="fr-feature"><i data-lucide="user-cog" aria-hidden="true"></i><span><strong class="fr-feature-title">User management</strong><small class="fr-feature-desc">Accounts and access</small></span></li>
+												<li class="fr-feature"><i data-lucide="shield-check" aria-hidden="true"></i><span><strong class="fr-feature-title">Role management</strong><small class="fr-feature-desc">Who can do what</small></span></li>
+												<li class="fr-feature"><i data-lucide="trending-down" aria-hidden="true"></i><span><strong class="fr-feature-title">Depreciation rules</strong><small class="fr-feature-desc">How assets lose value</small></span></li>
+										</ul>
+									</div>
+									<button class="fr-x" type="button" data-fr-close aria-label="Close Admin details"><i data-lucide="x" aria-hidden="true"></i></button>
+								</div>
+							</article>
+						</div>
+						<p class="fr-note">Job titles differ by hotel. The flow stays the same.</p>
+					</div>
+				</section>
+
+			<!-- 7) CTA PENUTUP: satu kalimat, tanpa tombol -->
+			<section class="cta-close deco-host" aria-label="Closing statement">
+				<span class="deco deco-ring deco-lg deco-ml" aria-hidden="true"></span>
+				<span class="deco deco-dots deco-mr" aria-hidden="true"></span>
+				<div class="fr-shell">
+					<p class="cta-close-text" data-rise>Every asset, every request, every round of upkeep, <span class="title-muted">in one place.</span></p>
+				</div>
+			</section>
+		</main>
+
+		<!-- ===== TEMPLATE ===== -->
+		<template id="feature-visual-shell">
+			<div class="tour-visual-topline"><span data-feature-label></span><span class="tour-live-mark"><i class="tour-live-dot"></i> SAMPLE DATA</span></div>
+			<div class="tour-visual-content"><div class="tour-visual-title"><span data-feature-count class="tour-visual-count"></span><h3 data-feature-title class="tour-visual-heading"></h3></div></div>
+			<div class="tour-visual-foot"><span>HMS · HOTEL OPERATIONS</span><span>MG HOTEL</span></div>
+		</template>
+		<template id="feature-content-0" data-title="Work Order Management" data-label="WORK ORDERS · TICKETS AND ASSIGNMENTS">
+			<div class="wo-showcase">
+				<div class="wo-scene wo-scene-queue">
+					<div class="wo-scene-bar"><span class="wo-scene-dots"><i></i><i></i><i></i></span><span>WORK ORDER QUEUE</span><i data-lucide="sliders-horizontal"></i></div>
+					<div class="wo-queue-title"><span><i data-lucide="clipboard-list"></i> Work Orders</span><b>03 active records</b></div>
+					<div class="wo-queue-filter"><i data-lucide="search"></i> Search requests <span>Filter <i data-lucide="list-filter"></i></span></div>
+					<div class="wo-queue-row is-selected"><span class="wo-queue-status"></span><span class="wo-queue-info"><strong>WO-20260903-0004</strong><small>Cable assembly · Front Office</small></span><span class="wo-queue-priority">MEDIUM</span><span class="wo-queue-actions"><button type="button" data-work-order-action="view" aria-label="View work order WO-20260903-0004"><i data-lucide="eye"></i></button><button type="button" data-work-order-action="edit" aria-label="Edit work order WO-20260903-0004"><i data-lucide="square-pen"></i></button></span></div>
+					<div class="wo-queue-row"><span class="wo-queue-status is-done"></span><span class="wo-queue-info"><strong>WO-20260903-0003</strong><small>AC Aqua · Engineering</small></span><span class="wo-queue-priority">MEDIUM</span></div>
+					<div class="wo-queue-row"><span class="wo-queue-status is-done"></span><span class="wo-queue-info"><strong>WO-20260903-0002</strong><small>Hospitality TV · Guest Room</small></span><span class="wo-queue-priority is-high">HIGH</span></div>
+				</div>
+				<div class="wo-scene wo-scene-report" aria-hidden="true">
+					<div class="wo-mini-heading"><span class="wo-mini-icon"><i data-lucide="file-check-2"></i></span><span><small>WORK ORDER REPORT</small><strong>WO-20260903-0004</strong></span><b>RESOLVED</b></div>
+					<div class="wo-mini-report-grid"><span>REQUESTER<strong>Rina Putri</strong></span><span>TECHNICIAN<strong>Agus Putra</strong></span><span>DURATION<strong class="wo-mini-success">48 sec</strong></span><span>ASSET<strong>Cable assembly</strong></span></div>
+					<div class="wo-mini-timeline"><i></i><span>Request received</span><i></i><span>Assigned</span><i class="is-finished"></i><span>Resolved</span></div>
+				</div>
+				<div class="wo-scene wo-scene-edit" aria-hidden="true">
+					<div class="wo-mini-heading"><span class="wo-mini-icon"><i data-lucide="square-pen"></i></span><span><small>EDIT WORK ORDER</small><strong>Update request</strong></span><i class="wo-mini-close" data-lucide="x"></i></div>
+					<div class="wo-mini-fields"><span>ASSET NAME<strong>Cable assembly</strong></span><span>LOCATION<strong>Front Office</strong></span><span>TARGET DIVISION<strong>Engineering</strong></span><span>PRIORITY<strong><i class="wo-mini-priority"></i> Medium</strong></span><span>STATUS<strong>Resolved</strong></span><span>TECHNICIAN<strong>Agus Putra</strong></span></div>
+					<div class="wo-mini-edit-footer"><span>Photo proof attached</span><b><i data-lucide="check"></i> Update</b></div>
+				</div>
+				<div class="wo-scene-caption"><i data-lucide="layers-2"></i><span>Request · Report · Resolution</span></div>
+			</div>
+		</template>
+		<template id="feature-content-1" data-title="Stay ahead of maintenance" data-label="PREVENTIVE MAINTENANCE · HVAC">
+			<div class="pm-task-app" aria-label="Preventive maintenance tasks">
+				<aside class="pm-task-sidebar">
+					<div class="pm-task-sidebar-heading"><span class="pm-task-icon"><i data-lucide="clipboard-check"></i></span><span><strong>PM Tasks</strong><small>Inspection queue</small></span></div>
+					<div class="pm-task-controls"><label class="pm-task-search"><i data-lucide="search"></i><input type="search" placeholder="Search task or asset" aria-label="Search tasks" /></label><label class="pm-task-filter-label"><span class="sr-only">Filter tasks by status</span><select class="pm-task-filter" aria-label="Filter tasks by status"><option value="assigned" selected>Assigned</option><option value="in-progress">In Progress</option><option value="completed">Completed</option><option value="all">All Status</option></select></label></div>
+					<div class="pm-task-list">
+						<button class="pm-task-card is-selected" type="button" data-pm-task data-status="assigned" data-task-id="PM-TASK-20260929-0001" data-task-name="AC Weekly Service" data-asset="AC Aqua" data-asset-code="AST-20260831-0002" data-schedule="2026-09-29">
+							<strong class="pm-task-id">PM-TASK-20260929-0001</strong><span class="pm-task-name">AC Weekly Service</span><small>Asset: AC Aqua</small><span class="pm-task-card-bottom"><small>Scheduled: 2026-09-29</small><b class="pm-status-badge">Assigned</b></span>
+						</button>
+						<button class="pm-task-card" type="button" data-pm-task data-status="in-progress" data-task-id="PM-TASK-20260929-0002" data-task-name="Guest Lift Inspection" data-asset="Guest Elevator 1" data-asset-code="AST-20260514-0011" data-schedule="2026-09-29">
+							<strong class="pm-task-id">PM-TASK-20260929-0002</strong><span class="pm-task-name">Guest Lift Inspection</span><small>Asset: Guest Elevator 1</small><span class="pm-task-card-bottom"><small>Scheduled: 2026-09-29</small><b class="pm-status-badge is-progress">In Progress</b></span>
+						</button>
+						<button class="pm-task-card" type="button" data-pm-task data-status="completed" data-task-id="PM-TASK-20260928-0008" data-task-name="Emergency Light Check" data-asset="Corridor Lights" data-asset-code="AST-20260116-0008" data-schedule="2026-09-28">
+							<strong class="pm-task-id">PM-TASK-20260928-0008</strong><span class="pm-task-name">Emergency Light Check</span><small>Asset: Corridor Lights</small><span class="pm-task-card-bottom"><small>Scheduled: 2026-09-28</small><b class="pm-status-badge is-completed">Completed</b></span>
+						</button>
+					</div>
+				</aside>
+				<section class="pm-inspection-panel" data-pm-detail data-task-id="PM-TASK-20260929-0001" data-task-name="AC Weekly Service" data-asset="AC Aqua" data-asset-code="AST-20260831-0002" data-schedule="2026-09-29" data-status="assigned" aria-label="Selected preventive maintenance task">
+					<header class="pm-inspection-header"><div><span class="pm-inspection-kicker">PM INSPECTION CARD</span><h4 data-pm-detail-id>PM-TASK-20260929-0001</h4><p><span data-pm-detail-name>AC Weekly Service</span> for <strong data-pm-detail-asset>AC Aqua</strong> <span class="pm-asset-code">(<span data-pm-detail-code>AST-20260831-0002</span>)</span></p></div><button class="pm-start-button" type="button" data-pm-start><i data-lucide="play"></i><span>Start Inspection</span></button></header>
+					<div class="pm-inspection-state" data-pm-empty><i data-lucide="triangle-alert"></i><strong>Inspection Not Started</strong><p>Start the inspection to activate checks and log details.</p></div>
+					<div class="pm-checklist" data-pm-checklist hidden><div class="pm-checklist-heading"><span>INSPECTION CHECKLIST</span><b data-pm-progress>0 / 3 complete</b></div><label><input type="checkbox" /> Check airflow and cooling output</label><label><input type="checkbox" /> Inspect filters and clean if needed</label><label><input type="checkbox" /> Record unusual noise or vibration</label><div class="pm-checklist-note"><i data-lucide="notebook-pen"></i><span>Inspection notes can be recorded as each check is completed.</span></div></div>
+					<div class="pm-inspection-footer"><span><i data-lucide="calendar-days"></i> Scheduled <strong data-pm-detail-date>2026-09-29</strong></span><span class="pm-current-status"><i></i><b data-pm-status-text>Assigned</b></span></div>
+				</section>
+			</div>
+		</template>
+		<template id="feature-content-2" data-title="One complete asset history" data-label="ASSET REGISTER · AC-0204">
+			<div class="asset-showcase">
+				<section class="asset-scene asset-scene-register" aria-hidden="true">
+					<div class="asset-scene-topbar"><span class="asset-scene-dots"><i></i><i></i><i></i></span><span>ASSET REGISTER</span><i data-lucide="more-horizontal"></i></div>
+					<div class="asset-register-heading"><span class="asset-register-icon"><i data-lucide="package-plus"></i></span><span><small>NEW ASSET RECORD</small><strong>Add New Asset</strong></span><i data-lucide="arrow-left"></i></div>
+					<div class="asset-register-tabs"><b>GENERAL</b><span>LOCATION &amp; DETAIL</span><span>DATAFILES</span><span>IMAGES</span></div>
+					<div class="asset-register-fields"><span>REGISTER DATE<strong>05 Oct 2026</strong></span><span>REGISTER CODE<strong>Auto-generated</strong></span><span class="asset-register-name">ASSET NAME<strong>AC Aqua</strong></span></div>
+					<div class="asset-tag-options"><span class="is-selected"><i></i> Barcode label</span><span><i></i> RFID</span><span><i></i> No tag</span></div>
+					<div class="asset-register-footer"><span>Category <b>Air Conditioner</b></span><span>Measurement <b>Unit</b></span></div>
+				</section>
+				<section class="asset-scene asset-scene-movement" aria-hidden="true">
+					<div class="asset-movement-heading"><span class="asset-movement-icon"><i data-lucide="send"></i></span><span><small>ASSET MOVEMENT</small><strong>Movement History</strong></span><b>COMPLETED</b></div>
+					<div class="asset-movement-route"><span><small>FROM</small><strong>Housekeeping</strong><em>Room 104</em></span><i data-lucide="arrow-right"></i><span><small>TO</small><strong>Housekeeping</strong><em>Room 102</em></span></div>
+					<div class="asset-movement-meta"><span>MV-20260903-0004</span><span>Linked WO-20260903-0003</span><span>03 Sep 2026</span></div>
+				</section>
+				<section class="asset-scene asset-scene-detail">
+					<div class="asset-detail-heading"><span class="asset-detail-icon"><i data-lucide="package"></i></span><span><small>ASSET PROFILE</small><strong>AC Aqua</strong><em>Tag: MG2026080000000007</em></span><b class="asset-condition">MAINTENANCE</b></div>
+					<div class="asset-detail-tabs" role="tablist" aria-label="Asset information tabs"><button class="is-active" type="button" role="tab" aria-selected="true" data-asset-tab="info">Information</button><button type="button" role="tab" aria-selected="false" data-asset-tab="movement">Movement History <small>1</small></button><button type="button" role="tab" aria-selected="false" data-asset-tab="repair">Service / Repair <small>1</small></button></div>
+					<div class="asset-detail-panel" role="tabpanel" data-asset-panel="info"><div><small>CATEGORY</small><strong>Air Conditioner / Aqua</strong></div><div><small>DEPARTMENT</small><strong>Housekeeping</strong></div><div><small>CURRENT LOCATION</small><strong>Repair Warehouse</strong></div><div><small>ASSET STATUS</small><strong class="asset-condition">Maintenance</strong></div><div class="asset-document-chip"><i data-lucide="files"></i><span>DATAFILES &amp; IMAGES</span><b>02 attached</b></div></div>
+					<div class="asset-detail-panel asset-detail-history" role="tabpanel" data-asset-panel="movement" hidden><div class="asset-history-event"><i data-lucide="send"></i><span><small>03 SEP 2026 · MOVEMENT</small><strong>Housekeeping · Room 104 <i data-lucide="arrow-right"></i> Repair Warehouse</strong><em>Requested by Rina Putri</em></span><b>Completed</b></div><div class="asset-history-event"><i data-lucide="map-pin"></i><span><small>PREVIOUS LOCATION</small><strong>Guest Room · Room 104</strong><em>MG Hotel</em></span></div></div>
+					<div class="asset-detail-panel asset-detail-history" role="tabpanel" data-asset-panel="repair" hidden><div class="asset-history-event"><i data-lucide="wrench"></i><span><small>21 SEP 2026 · SERVICE / REPAIR</small><strong>AC unit inspection</strong><em>Work Order WO-20260903-0003 · Engineering</em></span><b class="asset-repair-status">In Progress</b></div><div class="asset-repair-progress"><span><i></i></span><small>Technician assigned · Agus Putra</small></div></div>
+					<div class="asset-detail-foot"><span>PROPERTY · MG HOTEL</span><span>ASSET LIFECYCLE RECORD</span></div>
+				</section>
+				<div class="asset-showcase-caption"><i data-lucide="layers-2"></i><span>Register · Move · Maintain · Track</span></div>
+			</div>
+		</template>
+		<template id="feature-content-3" data-title="Know what needs attention" data-label="ENGINEERING OVERVIEW · TODAY">
+			<div class="hms-dashboard-showcase">
+				<div class="dashboard-collage">
+					<div class="dashboard-collage-label"><span><i data-lucide="hotel"></i> MG HOTEL</span><b>OPERATIONS / OVERVIEW</b></div>
+					<section class="dashboard-fragment dashboard-inventory-fragment">
+						<div class="dashboard-fragment-kicker"><i data-lucide="package"></i> ASSET INVENTORY <span>01</span></div>
+						<div class="inventory-count"><strong>10</strong><span>registered<br />units</span><b>100%</b></div>
+						<div class="inventory-meter"><i></i></div>
+						<div class="inventory-foot"><span>10 operational</span><span>0 need attention</span></div>
+					</section>
+					<section class="dashboard-fragment dashboard-work-fragment">
+						<div class="dashboard-fragment-kicker"><i data-lucide="clipboard-list"></i> WORK ORDERS <span>02</span></div>
+						<div class="dashboard-work-empty"><span><i data-lucide="circle-check"></i></span><div><strong>All clear</strong><small>No pending work orders</small></div></div>
+						<div class="dashboard-work-foot"><span>ACTIVE TASKS</span><b>0</b></div>
+					</section>
+					<section class="dashboard-fragment dashboard-pm-fragment">
+						<div class="dashboard-fragment-kicker"><i data-lucide="calendar-check"></i> PM PENDING <span>04</span></div>
+						<div class="dashboard-pm-heading"><strong>Inspection queue</strong><b>4 due</b></div>
+						<div class="dashboard-pm-line"><i></i><span><strong>AC Weekly Service</strong><small>AC Aqua · Assigned</small></span><time>29 SEP</time></div>
+						<div class="dashboard-pm-line"><i></i><span><strong>Lift safety check</strong><small>Guest Elevator 1 · In progress</small></span><time>29 SEP</time></div>
+						<div class="dashboard-pm-tail">+2 scheduled inspections</div>
+					</section>
+					<section class="dashboard-fragment dashboard-activity-fragment">
+						<div class="dashboard-fragment-kicker"><i data-lucide="activity"></i> RECENT ACTIVITY <span>LIVE LOG</span></div>
+						<div class="dashboard-activity-row"><span class="activity-kind kind-pm">PM TASK</span><span class="activity-code">PM-TASK-20261006-0001</span><b>In Progress</b><strong>AC Aqua</strong><small>2 Oct · 02:00</small></div>
+						<div class="dashboard-activity-row"><span class="activity-kind kind-work">WORK ORDER</span><span class="activity-code">WO-20260903-0004</span><b class="state-complete">Resolved</b><strong>Cable assembly</strong><small>3 Sep · 01:50</small></div>
+						<div class="dashboard-activity-row"><span class="activity-kind kind-movement">MOVEMENT</span><span class="activity-code">MV-20260903-0004</span><b class="state-complete">Completed</b><strong>AC Aqua</strong><small>3 Sep · 01:47</small></div>
+					</section>
+					<div class="dashboard-collage-caption"><i data-lucide="layers-2"></i><span>Inventory · Maintenance · Movement</span></div>
+				</div>
+			</div>
+		</template>
+		<template id="feature-content-4" data-title="Master Data" data-label="MASTER DATA · ORGANIZED HIERARCHIES">
+			<div class="master-data-showcase">
+				<div class="master-data-caption"><span><i data-lucide="database"></i> SHARED REFERENCE DATA</span><b>MG HOTEL</b></div>
+				<section class="master-data-scene master-category-scene">
+					<header class="master-scene-header"><span class="master-scene-icon"><i data-lucide="boxes"></i></span><span><small>ASSET CLASSIFICATION</small><strong>Asset Category</strong></span><b>03 GROUPS</b></header>
+					<div class="master-category-tree">
+						<div class="master-category-branch"><div class="master-parent-row"><span class="master-parent-icon"><i data-lucide="armchair"></i></span><strong>Furniture</strong><b>03</b></div><div class="master-child-list"><span>Table</span><span>Chair</span><span>Cabinet</span></div></div>
+						<div class="master-category-branch"><div class="master-parent-row"><span class="master-parent-icon"><i data-lucide="tv"></i></span><strong>TV</strong><b>03</b></div><div class="master-child-list"><span>TV LG</span><span>TV Aqua</span><span>TV Samsung</span></div></div>
+						<div class="master-category-branch"><div class="master-parent-row"><span class="master-parent-icon"><i data-lucide="wind"></i></span><strong>AC</strong><b>01</b></div><div class="master-child-list"><span>AC Aqua</span></div></div>
+					</div>
+				</section>
+				<section class="master-data-scene master-department-scene">
+					<header class="master-scene-header"><span class="master-scene-icon"><i data-lucide="network"></i></span><span><small>ORGANIZATION STRUCTURE</small><strong>Departments</strong></span><b>07 UNITS</b></header>
+					<div class="master-department-tree">
+						<div class="master-department-parent"><span class="master-parent-icon"><i data-lucide="building-2"></i></span><strong>Accounting</strong><b>Parent</b></div>
+						<div class="master-department-child"><i data-lucide="corner-down-right"></i><span><strong>IT</strong><small>Child department</small></span></div>
+						<div class="master-department-divider"></div>
+						<div class="master-department-units"><span>Engineering</span><span>Housekeeping</span><span>Front Office</span><span>Sales &amp; Marketing</span><span>Food &amp; Beverage</span><span>Security</span></div>
+					</div>
+				</section>
+				<div class="master-data-summary"><i data-lucide="git-branch"></i><span>Parent-child relationships keep asset and department data consistent.</span></div>
+			</div>
+		</template>
+		<template id="work-order-report-template">
+			<div class="wo-dialog-backdrop">
+				<section class="wo-dialog wo-report-dialog" role="dialog" aria-modal="true" aria-labelledby="wo-dialog-title">
+					<header class="wo-report-header"><div class="wo-report-title"><h2 id="wo-dialog-title">Work Order Report</h2><span class="wo-priority">Medium</span></div><div class="wo-report-actions"><span class="wo-state">Resolved</span><button type="button" class="wo-print-button" data-print-report><i data-lucide="printer"></i> Print report</button><button type="button" class="wo-dialog-close" data-dialog-close aria-label="Close report"><i data-lucide="x"></i></button></div><p>No: <strong data-bind="order-number">WO-20260903-0004</strong><span>Created: 03 Sep 2026, 01:50</span></p></header>
+					<div class="wo-report-body">
+						<div class="wo-report-column">
+							<section class="wo-report-card"><h3><i data-lucide="clipboard-list"></i> Request Details</h3><dl><div><dt>Requester</dt><dd>Rina Putri</dd></div><div><dt>Requesting Division</dt><dd>Engineering</dd></div><div><dt>Target Division</dt><dd>Engineering</dd></div><div><dt>Issue Description</dt><dd>Cable assembly at the front office console stopped working.</dd></div></dl></section>
+							<section class="wo-report-card"><h3><i data-lucide="package"></i> Damaged Asset</h3><dl><div><dt>Asset Name</dt><dd data-bind="asset-name">Cable assembly</dd></div><div><dt>Asset Barcode</dt><dd>Not labeled</dd></div><div><dt>Asset Location</dt><dd>Front Office</dd></div></dl></section>
+						</div>
+						<div class="wo-report-column">
+							<section class="wo-report-card"><h3><i data-lucide="wrench"></i> Repair &amp; Resolution</h3><dl><div><dt>Technician</dt><dd>Agus Putra</dd></div><div><dt>Assigned by</dt><dd>Agus Putra</dd></div><div><dt>Completed</dt><dd>03 Sep 2026, 02:04</dd></div><div><dt>Work Duration</dt><dd class="wo-duration">48 sec</dd></div><div><dt>Resolution Notes</dt><dd>Cable repaired and console tested.</dd></div></dl></section>
+							<section class="wo-report-card"><h3><i data-lucide="arrow-left-right"></i> Asset Transfer Flow</h3><p class="wo-empty-note">No asset transfers are recorded for this work order.</p></section>
+							<section class="wo-report-card"><h3><i data-lucide="history"></i> Activity Timeline</h3><div class="wo-timeline"><article><span class="wo-timeline-mark"></span><div><small>CREATED · 03 SEP 2026, 01:50</small><strong>By Rina Putri</strong><p>Work order created.</p></div></article><article><span class="wo-timeline-mark"></span><div><small>ASSIGNED · 03 SEP 2026, 01:52</small><strong>Assigned to Agus Putra</strong><p>Routed to Engineering.</p></div></article><article><span class="wo-timeline-mark is-complete"></span><div><small>RESOLVED · 03 SEP 2026, 02:04</small><strong>Repair completed</strong><p>Cable repaired and tested.</p></div></article></div></section>
+						</div>
+					</div>
+				</section>
+			</div>
+		</template>
+		<template id="work-order-edit-template">
+			<div class="wo-dialog-backdrop is-edit-dialog">
+				<section class="wo-dialog wo-edit-dialog" role="dialog" aria-modal="true" aria-labelledby="wo-dialog-title">
+					<header class="wo-dialog-header"><div><span class="wo-dialog-kicker">WORK ORDER · <span data-bind="order-number">WO-20260903-0004</span></span><h2 id="wo-dialog-title">Edit Work Order</h2></div><button type="button" class="wo-dialog-close" data-dialog-close aria-label="Close edit dialog"><i data-lucide="x"></i></button></header>
+					<form class="wo-edit-form">
+						<div class="wo-edit-body">
+							<label class="wo-photo-field"><span>Issue Photo / Visual Proof</span><span class="wo-photo-drop"><i data-lucide="camera"></i><strong>Drop a photo here or <b>browse</b></strong><small>JPG, PNG, GIF up to 2 MB</small><input type="file" accept="image/jpeg,image/png,image/gif" /></span></label>
+							<div class="wo-form-grid">
+								<label>Asset Name *<input name="asset" data-bind-value="asset-name" value="Cable assembly" required /></label>
+								<label>Location *<select name="location" required><option selected>Front Office</option><option>Guest Room · 204</option><option>Engineering</option><option>Lobby</option></select></label>
+								<label>Target Division / Department *<select name="division" required><option selected>Engineering</option><option>Housekeeping</option><option>Front Office</option><option>Security</option></select></label>
+								<label>Priority Level *<select name="priority" required><option>Low</option><option selected>Medium</option><option>High</option><option>Urgent</option></select></label>
+								<label>Work Order Status *<select name="status" required><option>New</option><option>Assigned</option><option>In Progress</option><option selected>Resolved</option></select></label>
+								<label>Assign Technician<select name="technician"><option selected>Agus Putra</option><option>Rina Putri</option><option>Agung Lesmana</option><option>Unassigned</option></select></label>
+							</div>
+							<div class="wo-edit-meta"><span><small>Created by</small> System · 03 Sep 2026, 01:50</span><span><small>Last updated</small> System · 21 Sep 2026, 09:26</span></div>
+						</div>
+						<footer class="wo-dialog-footer"><button type="button" class="wo-cancel-button" data-dialog-close>Cancel</button><button type="submit" class="wo-save-button"><i data-lucide="check"></i> Update</button></footer>
+					</form>
+				</section>
+			</div>
+		</template>
+
+		<!-- ===== FOOTER (LINK DIPERBAIKI) ===== -->
+		<footer class="site-footer">
+			<div class="footer-top">
+				<div class="footer-brand">
+					<a class="footer-logo" href="index.html">
+						<img src="img/logo.png" alt="HMS" />
+					</a>
+					<p class="footer-desc">
+						HMS (Hotel Maintenance System) helps hotels manage maintenance
+						requests, engineering work orders, preventive maintenance records,
+						and supporting asset information.
+					</p>
+					<div class="footer-social">
+						<a href="tel:+623616201101" aria-label="Phone"
+							><svg viewBox="0 0 24 24"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg
+						></a>
+						<a href="mailto:info@magnumsolusion.co.id" aria-label="Email"
+							><svg viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg
+						></a>
+					</div>
+				</div>
+
+				<div class="footer-col">
+					<h4>Quick Links</h4>
+					<a href="index.html">Home</a>
+					<a href="features.html">Features</a>
+					<a href="aboutus.html">About Us</a>
+					<a href="contact.html">Contact Us</a>
+				</div>
+
+				<div class="footer-col">
+					<h4>Contact</h4>
+					<a href="mailto:info@magnumsolusion.co.id">info@magnumsolusion.co.id</a>
+					<a href="tel:+623616201101">+623616201101</a>
+					<span>Bali, Indonesia</span>
+				</div>
+			</div>
+
+			<div class="footer-bottom">
+				<span>&copy; 2026 HMS. All rights reserved.</span>
+				<span>Hotel Maintenance &amp; Asset Management System</span>
+			</div>
+		</footer>
+
+		<script src="https://unpkg.com/lucide@0.469.0"></script>
+		<script src="js/global.js"></script>
+		<script src="js/features.js"></script>
+	</body>
+</html>
