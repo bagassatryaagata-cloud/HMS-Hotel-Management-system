@@ -404,8 +404,7 @@ document.addEventListener("DOMContentLoaded", () => {
 				{ src: "img/pm-2.png", alt: "Preventive maintenance: halaman 2" },
 				{ src: "img/pm-3.png", alt: "Preventive maintenance: halaman 3" },
 				{ src: "img/pm-4.png", alt: "Preventive maintenance: halaman 4" },
-				{ src: "img/pm-5.png", alt: "Preventive maintenance: halaman 5" },
-				{ src: "img/pm-6.png", alt: "Preventive maintenance: halaman 6" },
+
 			],
 		},
 		asset: {
@@ -417,7 +416,6 @@ document.addEventListener("DOMContentLoaded", () => {
 				{ src: "img/asset-4.png", alt: "Asset management: halaman 4" },
 				{ src: "img/asset-5.png", alt: "Asset management: halaman 5" },
 				{ src: "img/asset-6.png", alt: "Asset management: halaman 6" },
-				{ src: "img/asset-7.png", alt: "Asset management: halaman 7" },
 			],
 		},
 	};
